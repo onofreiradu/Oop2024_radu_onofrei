@@ -1,12 +1,14 @@
-#include "FirstClass.h"
-#include <stdio.h>
+#include "NumberList.h"
 
 
 int main() {
-	FirstClass c1;
-	printf("Valoarea lui x este %d\n", c1.getX());
-	c1.setX(10);
-	printf("Valoarea lui x este %d", c1.getX());
-	c1.y = 5;
+	NumberList n1;
+	n1.Init();
+	n1.Add(21);
+	n1.Add(10);
+	n1.Add(3);
+	n1.Add(11);
+	n1.Sort();
+	n1.Print();
 	return 0;
 }
