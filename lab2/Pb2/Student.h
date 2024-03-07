@@ -1,11 +1,12 @@
 #pragma once
+#include <cstring>
 class Student
 {
-	const char *name;
+	char name[30];
 	float math_grd, history_grd, english_grd;
 public:
-	void set_name(const char* inputName);
-	const char * get_name();
+	void set_name(char* inputName);
+	char * get_name();
 	void set_math_grd(float input_grade);
 	void set_history_grd(float input_grade);
 	void set_english_grd(float input_grade);

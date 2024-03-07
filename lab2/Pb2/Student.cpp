@@ -1,11 +1,11 @@
 #include "Student.h"
 
-void Student::set_name(const char* inputName)
+void Student::set_name( char* inputName)
 {
-	this->name = inputName;
+	memcpy(this->name, inputName, strlen(inputName) + 1);
 }
 
-const char* Student::get_name()
+char* Student::get_name()
 {
 	return name;
 }
